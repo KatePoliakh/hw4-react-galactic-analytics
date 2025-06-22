@@ -1,0 +1,89 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #06060658;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 45px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  animation: modalAppear 0.3s ease-in-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.modalBody {
+  margin-top: 1.5rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 2rem;
+  right: 15rem;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  transform: scale(1.1);
+}
+
+.closeButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.infoBlock {
+  background-color: #CB81FF;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infoBlock:last-child {
+  margin-bottom: 0;
+}
+
+.infoBlockValue {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.infoBlockDescription {
+  font-size: 0.9rem;
+  color: #201B10;
+}

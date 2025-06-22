@@ -1,0 +1,129 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.itemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #CB81FF;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.itemContent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fileInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.filename {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 300px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  max-width: 380px;
+  width: 100%;
+  gap: 5px;
+}
+
+.statusText {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+.text {
+  display: flex;
+  align-items: center; 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5rem; 
+}
+
+.successText {
+  color: #201B10; 
+}
+
+.failureText {
+  color: #8F64AE; 
+}
+
+.successIcon {
+  color: #201B10;
+}
+
+.failureIcon {
+  color: #8F64AE;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.viewButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.viewButton {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.viewButton:hover {
+  background-color: #0ea5e9;
+}
+
+.deleteButton {
+  background-color: white;
+  width: 67px;
+  height: 67px;
+  border-radius: 20px;
+}
+
+.deleteButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

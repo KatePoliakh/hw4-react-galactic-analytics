@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  min-height: 100vh;
+  color: black;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  min-height: 100vh;
+  color: black;
+}
+
+.note { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.moreButton {
+  background-color: #2AE881;
+  color: black;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.clearButton {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.emptyMessage {
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+}
