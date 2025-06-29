@@ -11,7 +11,7 @@ interface HighlightsProps {
   isModalStyle?: boolean;
 }
 
-const Highlights: React.FC<HighlightsProps> = ({ items, isModalStyle = false }) => {
+export const Highlights: React.FC<HighlightsProps> = ({ items, isModalStyle = false }) => {
   const gridClass = isModalStyle ? styles.modalHighlightsGrid : styles.defaultHighlightsGrid;
   const cardClass = isModalStyle ? styles.modalHighlightCard : styles.defaultHighlightCard;
   const valueClass = isModalStyle ? styles.modalHighlightValue : styles.defaultHighlightValue;
@@ -30,5 +30,3 @@ const Highlights: React.FC<HighlightsProps> = ({ items, isModalStyle = false }) 
   </div>
   );
 };
-
-export default Highlights;

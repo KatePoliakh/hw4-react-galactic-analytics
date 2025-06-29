@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './HistoryPage.module.css';
 import { useHistoryStore } from '../../store/history';
 import Modal from '../../components/Modal/Modal';
-import Highlights from '../../components/Highlights/Highlights';
+import {Highlights} from '../../components/Highlights/Highlights';
 import HistoryItem from '../../components/HistoryItem/HistoryItem';
 import { useNavigate } from 'react-router-dom';
 

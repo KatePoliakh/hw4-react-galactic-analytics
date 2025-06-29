@@ -4,7 +4,7 @@ import styles from './AnalyticsPage.module.css';
 import { useAnalyticsStore } from '../../store/analytics';
 import { useHistoryStore } from '../../store/history';
 import { analyzeCSV } from '../../utils/api';
-import Highlights from '../../components/Highlights/Highlights';
+import { Highlights } from '../../components/Highlights/Highlights';
 import { HIGHLIGHT_TITLES } from '../../constants/highlights';
 import { FileLoader } from '../../components/FileUploader/FileUploader';
 
