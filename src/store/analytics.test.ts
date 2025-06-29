@@ -43,7 +43,6 @@ describe('analyticsStore', () => {
     expect(state.highlights).toEqual([]);
     expect(state.error).toBeNull();
     expect(state.isLoading).toBe(false);
-    // reset не должен сбрасывать isProcessed
     expect(state.isProcessed).toBe(false);
   });
 
@@ -105,12 +104,10 @@ describe('analyticsStore', () => {
   });
 
   test('независимые обновления состояния', () => {
-    // Устанавливаем файл
     act(() => {
       useAnalyticsStore.getState().setFile(new File([''], 'test.csv'));
     });
     
-    // Устанавливаем ошибку в другом "действии"
     act(() => {
       useAnalyticsStore.getState().setError('File error');
     });

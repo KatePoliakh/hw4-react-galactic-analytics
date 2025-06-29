@@ -2,7 +2,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import HistoryItem from './HistoryItem';
 import React from 'react';
 
-// Мокаем изображения
 jest.mock('src/assets/file.png', () => 'file-icon.png');
 jest.mock('src/assets/happy.png', () => 'happy-icon.png');
 jest.mock('src/assets/sad.png', () => 'sad-icon.png');
@@ -89,11 +88,11 @@ describe('HistoryItem Component', () => {
     render(<HistoryItem {...defaultProps} success={false} />);
     
     const failureText = screen.getByText('Не удалось обработать');
-    expect(failureText).toHaveClass('successText'); // У вас в коде инвертированные классы
+    expect(failureText).toHaveClass('successText'); 
     expect(failureText).not.toHaveClass('failureText');
     
     const failureIcon = screen.getByAltText('Failure Icon');
-    expect(failureIcon).toHaveClass('successIcon'); // У вас в коде инвертированные классы
+    expect(failureIcon).toHaveClass('successIcon'); 
     expect(failureIcon).not.toHaveClass('failureIcon');
   });
 });
